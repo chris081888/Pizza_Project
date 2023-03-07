@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Joey's Pizza Order Results</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <p>EEEEEH! Welcome to Joey's Pizza</p>
+    <a href="index.html">
+      <img src="./img/logo.png" alt="header logo">
+    </a>
+    <p>How you doin'?</p>
+  </div>
+</header>
+<main>
+  <h1>Order Summary</h1>
+  <p>Thank you for your order, <?php echo $_POST['firstname']; ?> <?php echo $_POST['lastname']; ?>!</p>
+  <p>Your pizza order has been placed for <?php echo $_POST['Quantity']; ?> <?php echo $_POST['pizza-type']; ?> pizza(s) with <?php echo $_POST['lang']; ?> sauce and the following toppings:</p>
+  <ul>
+    <?php
+				$toppings = $_POST['toppings'];
+				foreach ($toppings as $topping) {
+					echo "<li>" . $topping . "</li>";
+    }
+    ?>
+  </ul>
+  <p>Your order will be delivered to <?php echo $_POST['streetnumber']; ?> <?php echo $_POST['streetname']; ?> <?php echo $_POST['streetdirection']; ?>, <?php echo $_POST['postalcode']; ?>.</p>
+  <p>Thank you for choosing Joey's Pizza!</p>
+</main>
+</body>
+</html>

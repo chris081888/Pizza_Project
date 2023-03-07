@@ -1,0 +1,146 @@
+/* Set the background color for the page */
+body {
+    background-color: #f7f7f7;
+    background-image: url("../img/background.png");
+}
+
+/* Style the header section */
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container p {
+    flex: 1;
+}
+
+.container img {
+    margin: 0 20px;
+    max-width: 100%;
+    height: 60px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: #f9a602;
+}
+
+/* Style the title section */
+div:first-of-type {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333;
+}
+
+/* Style the form section */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0,0,0,0);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-image: url("../img/clipboard.png");
+    background-size: cover;
+    background-position: center;
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #333;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+label {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f9a602;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e59f05;
+}
+input[type=reset] {
+    background-color: orange;
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    line-height: 50px;
+}
+
+input[type=submit] {
+    background-color: orange;
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    line-height: 50px;
+}

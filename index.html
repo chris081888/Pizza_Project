@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Joey's Pizza</title>
+    <meta name="description" content="Joey's Pizza order page">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="">
+    <link rel="stylesheet" href="./css/style.css">
+<body class="flex">
+<header>
+    <div class="container">
+        <p>EEEEEH! Welcome to Joey's Pizza</p>
+        <a href="index.html">
+            <img src="./img/logo.png" alt="header logo">
+        </a>
+        <p>How you doin'?</p>
+    </div>
+
+    </div>
+</header>
+<!-- let's setup sections for our title and our navigation tabs -->
+<div>
+    <h1>
+        Pizza Order Form - Whatcha want?
+    </h1>
+</div>
+<form action="./php/php.php" method="POST" enctype="multipart/form-data">
+<div>
+    <h2>
+       <p>New Phone</p>
+        <p>Who Dis?</p>
+    </h2>
+    <p>
+        <input type="text" name="firstname" required placeholder="Your First Name">
+        <input type="text" name="lastname" required placeholder="Your Last Name">
+        <input type="text" name="phonenumber" required placeholder="Phone Number">
+        <input type="number" name="streetnumber" required placeholder="Street Number">
+        <input type="text" name="streetname" required placeholder="Street Name">
+        <input type="text" name="streetdirection" placeholder="Street Direction (optional)">
+        <input type="text" name="postalcode" required placeholder="Postal Code">
+        <input type="email" placeholder="Your Email (optional)">
+    </p>
+</div>
+<div>
+    <h3>
+        How many we talking here?
+    </h3>
+        <input type="number" id="Quantity" name="Quantity" value="1" label="Quantity">
+</div>
+<div>
+
+   <h3>
+       Pour Your Foundation
+   </h3>
+        <label for="pizza-type">Pizza Type:</label>
+        <select id="pizza-type" name="pizza-type" required>
+            <option value="">--Pick your Dough--</option>
+            <option id="New York Style Dough" name="New York Style Dough" value="New York Style Dough" label="New York Style Dough" </option>
+            <option id="Neapolitan Style Dough" name="Neapolitan Style Dough" value="Neapolitan Style Dough" label="Neapolitan Style Dough"></option>
+            <option id="Sicilian Style Dough" name="Sicilian Style Dough" value="Sicilian Style Dough" label="Sicilian Style Dough"></option>
+            <option id="Gluten Free Dough" name="Gluten Free Dough" value="Gluten Free Dough" label="Gluten Free Dough"></option>
+            <option id="Chicago Style Dough" name="Chicago Style Dough" value="Chicago Style Dough" label="Chicago Style Dough"></option>
+            <option id="Deep Dish Dough" name="Deep Dish Dough" value="Deep Dish Dough" label="Deep Dish Dough"></option>
+            <option id="Detroit Style Dough" name="Detroit Style Dough" value="Detroit Style Dough" label="Detroit Style Dough"></option>
+            <option id="Stuffed Crust Dough" name="Stuffed Crust Dough" value="Stuffed Crust Dough" label="Stuffed Crust Dough"></option>
+            <option id="Thin Crust Dough" name="Thin Crust Dough" value="Thin Crust Dough" label="Thin Crust Dough"></option>
+            <option id="New Haven Style Dough" name="New Haven Style Dough" value="New Haven Style Dough" label="New Haven Style Dough"></option>
+            <option id="St. Louis Style Dough" name="St. Louis Style Dough" value="St. Louis Style Dough" label="St. Louis Style Dough"></option>
+        </select>
+</div>
+<div>
+    <h3>
+        Slippery When Wet
+    </h3>
+        <input type="radio" id="Pesto" name="lang" value="Pesto">
+        <label for="Pesto">Pesto</label>
+        <input type="radio" id="White Garlic" name="lang" value="White Garlic">
+        <label for="White Garlic">White Garlic</label>
+        <input type="radio" id="Garlic Ranch" name="lang" value="Garlic Ranch">
+        <label for="Garlic Ranch">Garlic Ranch</label>
+        <input type="radio" id="Hummus" name="lang" value="Hummus">
+        <label for="Hummus">Hummus</label>
+        <input type="radio" id="Buffalo Sauce" name="lang" value="Buffalo Sauce">
+        <label for="Buffalo Sauce">Buffalo Sauce</label>
+        <input type="radio" id="Marinara Sauce" name="lang" value="Marinara Sauce">
+        <label for="Marinara Sauce">Marinara Sauce</label>
+</div>
+<div>
+    <h3>
+        Carnivors Welcome
+    </h3>
+        <input type="checkbox" id="Peperoni" name="Peperoni" value="Peperoni">
+        <label for="Peperoni">Peperoni</label>
+        <input type="checkbox" id="Sausage" name="Sausage" value="Sausage">
+        <label for="Sausage">Sausage</label>
+        <input type="checkbox" id="Bacon" name="Bacon" value="Bacon">
+        <label for="Bacon">Bacon</label>
+        <input type="checkbox" id="Ground Beef" name="Ground Beef" value="Ground Beef">
+        <label for="Ground Beef">Ground Beef</label>
+        <input type="checkbox" id="Prosciutto" name="Prosciutto" value="Prosciutto">
+        <label for="Prosciutto">Prosciutto</label>
+</div>
+<div>
+<h3>
+    Don't forget the salad
+</h3>
+        <input type="checkbox" id="Pineapple" name="Pineapple" value="Pineapple">
+        <label for="Pineapple">Pineapple</label>
+        <input type="checkbox" id="Onion" name="Onion" value="Onion">
+        <label for="Onion">Onion</label>
+        <input type="checkbox" id="Tomato" name="Tomato" value="Tomato">
+        <label for="Tomato">Tomato</label>
+        <input type="checkbox" id="Garlic" name="Garlic" value="Garlic">
+        <label for="Garlic">Garlic</label>
+        <input type="checkbox" id="Rhubarb" name="Rhubarb" value="Rhubarb">
+        <label for="Rhubarb">Rhubarb</label>
+</div>
+    <input type="reset" value="Reset">
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
